@@ -30,13 +30,28 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+Stateful components, be it function or class, are created by giving the component STATE. In a function component we assign relevant data a slice of state by using useState. In class components we set relevant data to state on the this.state object in the constructor.
+
 2. Describe the different phases of the component lifecycle.
+
+Mounting Updating Unmounting
+
+  Mounting is the birth of the component, it's initial instance. In this phase rendering of some JSX will happen, data will be requested, and only after this first stage is over does that data come back. It's arrival causes the component to shift into the updating life stage, where we can do specific actions to track user interaction and submissions. When the component is no longer required it will unmount, entering the unmounting stage where we can clean up after our component.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Certain events occur at certain times for a component - time is needed to convert the JSX, create and instance of the component, fetch an API, and render content to the screen. We can take advantage of these windows to do tasks that relate to the state and functionality of the component.
+
 4. Define stateful logic.
 
+Stateful logic is a board term - that at it's simplest is logic that deals with state. Like handling a click event, or managing event listeners.
+
+
 5. Describe how to test a React component with React Testing Library.
+
+Arrange, Act, Assert
+
+  Arrange - arrange a test by setting up your code in a way that makes testing it easy! Act - Call a method or function that returns a result that is of interest to our test (fireEvent.click(element) for example) Assert - We see if the return matches the return we expected
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
